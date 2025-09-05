@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">TechWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li class="dropdown">
+          <a href="#">More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="articles.html">Article</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <!--  Subscribe Button -->
+        <li><a href="#" class="subscribe-btn">Subscribe</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Community</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <span> &raquo;</span>
+      <span>Community</span>
+    </div>
+  </section>
+
+  <div class="all-intro">
+    <h5 class="badge">JOIN THE TECHWORLD COMMUNITY</h5>
+    <h2>Connect • Share • Learn Together</h2>
+    <p class="intro-sub">
+      Be part of a vibrant community of tech enthusiasts, professionals, and learners.
+      Discuss the latest innovations, share your ideas, ask questions, and grow together in a space built for
+      collaboration and learning.
+    </p>
+    <a href="#join" class="join-btn">Join Now</a>
+  </div>
+
+  <section class="community-features">
+    <div class="feature-card">
+      <h3>Discussions</h3>
+      <p>Engage in meaningful conversations about the latest technology trends and innovations.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Resources</h3>
+      <p>Access guides, tutorials, and articles to expand your knowledge and skills.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Networking</h3>
+      <p>Connect with tech enthusiasts, professionals, and learners from around the world.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Growth</h3>
+      <p>Learn, share, and grow in a supportive environment built for collaboration.</p>
+    </div>
+  </section>
+
+  <!-- Join Form -->
+  <section id="join" class="community-join">
+    <h2>Become a Member</h2>
+    <p>Sign up for free and start connecting today!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Why do you want to join?" rows="4"></textarea>
+      <button type="submit">Join the Community</button>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>TechWorld</h3>
+        <p>TechWorld is a technology-focused website that provides news, reviews, articles, events, and community
+          features to keep users updated and engaged with the latest in technology.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="magazine.html">Magazine</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="quiz.html">Quizzes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: techworld@gmail.com</p>
+        <p>Address: Ajmer, India</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a><br>
+        <a href="#">Twitter</a><br>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechWorld. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dropdown toggle for mobile
+    document.querySelectorAll(".dropdown > a").forEach(item => {
+      item.addEventListener("click", e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          item.parentElement.classList.toggle("open");
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

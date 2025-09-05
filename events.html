@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">TechWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li class="dropdown">
+          <a href="#">More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="articles.html">Article</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <!--  Subscribe Button -->
+        <li><a href="#" class="subscribe-btn">Subscribe</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Events</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <span> &raquo;</span>
+      <span>Events</span>
+    </div>
+  </section>
+
+  <div class="all-intro">
+    <h5 class="badge">UPCOMING EVENTS</h5>
+    <h2>Join <span>TechWorld</span> at Our Latest <br> Conferences & Meetups</h2>
+    <p class="intro-sub">
+      Stay connected with the future of technology. Explore our upcoming events,
+      workshops, and conferences designed for tech enthusiasts, innovators, and learners.
+    </p>
+  </div>
+
+  <!-- Events Section -->
+  <section class="events">
+    <div class="events-container">
+
+      <div class="event-cards">
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">15</span>
+            <span class="month">SEP</span>
+          </div>
+          <div class="event-info">
+            <h3>AI Conference 2025</h3>
+            <p><strong>Location:</strong> Virtual (Online)</p>
+            <p><strong>Organisers:</strong> AI Team</p>
+            <p>Discover the future of Artificial Intelligence with industry leaders,
+              live demos, and networking sessions.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">02</span>
+            <span class="month">OCT</span>
+          </div>
+          <div class="event-info">
+            <h3>Gadget Expo 2025</h3>
+            <p><strong>Location:</strong> Ajmer Tech Park</p>
+            <p><strong>Organisers:</strong> Local Tech Community</p>
+            <p>Experience the latest innovations in smartphones, laptops, and
+              consumer gadgets before they hit the market.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">20</span>
+            <span class="month">NOV</span>
+          </div>
+          <div class="event-info">
+            <h3>History of Technology Summit</h3>
+            <p><strong>Location:</strong> Civil Line, Ajmer</p>
+            <p><strong>Organisers:</strong> TCS + Academic Partners</p>
+            <p>A unique event showcasing the evolution of technology, from early
+              computing to modern innovations.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="event-cards">
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">15</span>
+            <span class="month">DEC</span>
+          </div>
+          <div class="event-info">
+            <h3>CodeWithIt Conference 2025</h3>
+            <p><strong>Location:</strong> Virtual (Online)</p>
+            <p><strong>Organisers:</strong> AI Team</p>
+            <p>Discover the future of Artificial Intelligence with industry leaders,
+              live demos, and networking sessions.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">23</span>
+            <span class="month">DEC</span>
+          </div>
+          <div class="event-info">
+            <h3>SupaBase 2025</h3>
+            <p><strong>Location:</strong> Delhi</p>
+            <p><strong>Organisers:</strong> SupaBase</p>
+            <p>Experience the latest innovations in smartphones, laptops, and
+              consumer gadgets before they hit the market.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">29</span>
+            <span class="month">DEC</span>
+          </div>
+          <div class="event-info">
+            <h3>Technology Summit</h3>
+            <p><strong>Location:</strong> Jaipur</p>
+            <p><strong>Organisers:</strong> TCS</p>
+            <p>A unique event showcasing the evolution of technology, from early
+              computing to modern innovations.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>TechWorld</h3>
+        <p>TechWorld is a technology-focused website that provides news, reviews, articles, events, and community
+          features to keep users updated and engaged with the latest in technology.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="magazine.html">Magazine</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="quiz.html">Quizzes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: techworld@gmail.com</p>
+        <p>Address: Ajmer, India</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a><br>
+        <a href="#">Twitter</a><br>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechWorld. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dropdown toggle for mobile
+    document.querySelectorAll(".dropdown > a").forEach(item => {
+      item.addEventListener("click", e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          item.parentElement.classList.toggle("open");
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

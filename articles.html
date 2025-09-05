@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">TechWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li class="dropdown">
+          <a href="#">More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="articles.html">Article</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="magazine.html">Magazine</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Resources ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <!--  Subscribe Button -->
+        <li><a href="#" class="subscribe-btn">Subscribe</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Articles</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <span> &raquo;</span>
+      <span>Articles</span>
+    </div>
+  </section>
+
+  <div class="all-intro">
+    <h5 class="badge">ARTICLES</h5>
+    <h2>In-Depth Stories, Expert Opinions & <br><span> Tech Trends</span></h2>
+    <p class="intro-sub">
+      Go beyond the headlines with thought-provoking articles written by tech enthusiasts and industry experts.
+      From exploring the history of technology to analyzing future trends, our articles give you insights that matter.
+    </p>
+  </div>
+
+  <!-- Featured Article -->
+  <section class="featured-article">
+    <img src="https://resumekraft.com/wp-content/uploads/2021/08/business-management-linkedin-background-1024x256.jpg"
+      alt="Featured Article">
+    <div class="featured-ar-content">
+      <h2>The Future of Technology in 2025</h2>
+      <p>From AI-driven healthcare to interplanetary travel, technology is shaping a new era of human progress. This
+        featured article explores the biggest upcoming shifts in tech innovation.</p>
+      <a href="#">Read Full Article</a>
+    </div>
+  </section>
+
+  <!-- Article -->
+  <section class="article-list">
+    <h2>More Articles</h2>
+
+    <div class="article-row">
+      <img src="https://miro.medium.com/1*sf41zHXlT9e0dZbZJCjMjw.jpeg" alt="Cybersecurity">
+      <div class="article-text">
+        <h3>Cybersecurity Challenges of Tomorrow</h3>
+        <p>With the rise of quantum computing, experts warn of new risks to data security. Learn what strategies
+          companies are adopting to protect critical information.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="article-row">
+      <img src="https://spaces-wp.imgix.net/2022/09/Metaverse_image-3-946x553.png?auto=compress,format&q=50"
+        alt="VR Metaverse">
+      <div class="article-text">
+        <h3>Immersive Experiences in the Metaverse</h3>
+        <p>Virtual and augmented reality are no longer limited to games. From remote work to education, the metaverse is
+          transforming how we live and interact.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="article-row">
+      <img src="https://blog.equinix.com/wp-content/uploads/2018/05/GettyImages-935705246.jpg" alt="Blockchain">
+      <div class="article-text">
+        <h3>Blockchain Beyond Bitcoin</h3>
+        <p>Blockchain is proving its worth in sectors like healthcare, finance, and supply chains. This article dives
+          into how decentralized systems are powering trust and transparency.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="article-row">
+      <img
+        src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2Fedf74a1e-131b-11e6-839f-2922947098f0?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1"
+        alt="Robotics">
+      <div class="article-text">
+        <h3>Robotics in Everyday Life</h3>
+        <p>From robotic pets to smart assistants, robotics is becoming a part of our homes and daily routines. Here’s
+          how robots are evolving to help humans.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="article-row">
+      <img
+        src="https://imageio.forbes.com/specials-images/imageserve/6296a459f150d611efd94145/Spacecraft-Orion-on-orbit-of-Earth-planet--Spaceship-in-space--Expedition-to-Moon-/960x0.jpg?format=jpg&width=960"
+        alt="Space Tech">
+      <div class="article-text">
+        <h3>Space Exploration: The Next Decade</h3>
+        <p>Private companies and government agencies are competing in a new space race. Learn about the exciting
+          missions planned for the 2030s.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="article-row">
+      <img src="https://media.apptunix.com/wp-content/uploads/sites/3/2024/06/28055029/Banner-%E2%80%93-2.jpg"
+        alt="AI Healthcare">
+      <div class="article-text">
+        <h3>AI in Healthcare</h3>
+        <p>From diagnosing diseases to assisting doctors in surgery, AI is revolutionizing modern healthcare. But what
+          are the ethical concerns?</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>TechWorld</h3>
+        <p>TechWorld is a technology-focused website that provides news, reviews, articles, events, and community
+          features to keep users updated and engaged with the latest in technology.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="magazine.html">Magazine</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="quiz.html">Quizzes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: techworld@gmail.com</p>
+        <p>Address: Ajmer, India</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a><br>
+        <a href="#">Twitter</a><br>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechWorld. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dropdown toggle for mobile
+    document.querySelectorAll(".dropdown > a").forEach(item => {
+      item.addEventListener("click", e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          item.parentElement.classList.toggle("open");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

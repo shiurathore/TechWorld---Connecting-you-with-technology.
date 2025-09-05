@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+<header>
+  <div class="logo">TechWorld</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gadgets.html">Gadgets</a></li>
+      <li class="dropdown">
+        <a href="#">More ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="articles.html">Article</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="quiz.html">Quizzes</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Resources ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </li>
+      <!--  Subscribe Button -->
+      <li><a href="#" class="subscribe-btn">Subscribe</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+    <div></div><div></div><div></div>
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact</h1>
+    <div>
+    <a href="index.html">Home</a> 
+    <span> &raquo;</span> 
+    <span>Contact</span>
+    </div>
+  </section>
+
+   <!-- Contact Info -->
+  <section class="contact-info">
+    <div class="info-card">
+      <h3>Email</h3>
+      <p>techworld@gmail.com</p>
+    </div>
+    <div class="info-card">
+      <h3>Address</h3>
+      <p>Ajmer, India</p>
+    </div>
+    <div class="info-card">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="#">Facebook</a> • 
+        <a href="#">Twitter</a> • 
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h2>Send us a Message</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>TechWorld</h3>
+        <p>TechWorld is a technology-focused website that provides news, reviews, articles, events, and community features to keep users updated and engaged with the latest in technology.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="magazine.html">Magazine</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="quiz.html">Quizzes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+           <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: techworld@gmail.com</p>
+        <p>Address: Ajmer, India</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a><br>
+        <a href="#">Twitter</a><br>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechWorld. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Dropdown toggle for mobile
+    document.querySelectorAll(".dropdown > a").forEach(item => {
+      item.addEventListener("click", e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          item.parentElement.classList.toggle("open");
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
